@@ -1,0 +1,42 @@
+{
+  "name": "ng-pickadate",
+  "description": "AngularJS directives for pickadate.js",
+  "version": "0.3.1",
+  "authors": [
+    "Rémi Alvergnat <toilal.dev@gmail.com> (http://www.pragmasphere.com)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toilal/ng-pickadate.git"
+  },
+  "ignore": [],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "pickadate": "~3.5.6"
+  },
+  "main": "ng-pickadate.js",
+  "overrides": {
+    "pickadate": {
+      "main": [
+        "lib/picker.js",
+        "lib/picker.date.js",
+        "lib/picker.time.js",
+        "lib/themes/classic.css",
+        "lib/themes/classic.date.css",
+        "lib/themes/classic.time.css"
+      ]
+    }
+  },
+  "homepage": "https://github.com/Toilal/ng-pickadate",
+  "_release": "0.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.1",
+    "commit": "2db2b6ec1e01964188076aca8f2fa175b4b65bf4"
+  },
+  "_source": "https://github.com/Toilal/ng-pickadate.git",
+  "_target": "^0.3.1",
+  "_originalSource": "ng-pickadate",
+  "_direct": true
+}

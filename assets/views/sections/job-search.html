@@ -1,0 +1,52 @@
+<div class="job-searchbar-ui">
+	<div class="job-searchbar-ui-inside">
+		<div class="job-searchbox">
+			<div ng-show="isSearching" class="job-searchbox-loader"><img src="img/grey-preloader.gif"></div>
+			<div class="row">
+				<div class="col s8">
+					<input ng-model="jobInput" class="job-search-input" type="text" placeholder="Job search, ex: javascript" name="">
+				</div>
+				<div class="col s4">
+					<div class="input-field">
+						<select ng-model="countries.model">
+							<option ng-repeat="c in countries.availableCountries" value="{{c.countryCode}}">{{c.countryLabel}}</option>
+						</select>
+						<label>Choose country</label>
+					</div>
+
+				</div>				
+			</div>			
+		</div>
+	</div>
+</div>
+
+
+<div class="default-section job-display-section">
+	<div class="row">
+		<div>
+
+			
+			<div class="apollo-panel-content">
+				<p class="panel-title">Jobs</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+
+					
+					<div class="my-ac-panel-section">
+						<job-listing class="job-listing" ng-repeat="job in jobResults" job="job"></job-listing>
+
+						<div ng-if="jobResults.length > 0 && !isSearching" class="job-listing-loadmore">
+							<a ng-click="loadMore($event)" class="apollo-base-button apollo-success-button apollo-small-button pull-left" href="#"><i style="margin-right: 10px;" class="fa fa-spinner" aria-hidden="true"></i>Load more</a>
+						</div>						
+					</div>
+					
+										
+				</div>
+			</div>
+			
+
+		</div>
+
+
+	</div>
+</div>

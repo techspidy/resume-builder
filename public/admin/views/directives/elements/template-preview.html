@@ -1,0 +1,17 @@
+<div class="img-preview tpl-image"><img ng-src="../templates/{{template.slug}}/img/preview.jpg" alt="" /></div>
+<div class="template-preview-hover"></div>
+<div class="template-preview-hover-active">
+	<p class="template-preview-name">{{ template.name }}</p>
+
+	<div class="template-preview-nav-ui">
+		<div class="template-preview-nav pull-left">
+			<a class="preview-nav-link preview-nav-link-border" target="_blank" href="{{ template.previewUrl }}">Preview</a>
+		</div>
+		<div class="template-preview-nav pull-left">
+			<a class="preview-nav-link" href="#" ng-click="useTemplate(template)">Use template</a>
+		</div>		
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div ng-if="template.isPro !== true" class="template-preview-badge"><img src="img/template-badge-free.png" alt=""></div>
+<div ng-if="template.isPro === true" class="template-preview-badge"><img src="img/template-badge-pro.png" alt=""></div>	

@@ -1,0 +1,1 @@
+DEBUG=apollo-cv:* nodemon bin/server.js 

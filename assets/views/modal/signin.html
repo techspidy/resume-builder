@@ -1,0 +1,14 @@
+<div class="apollo-base-modal appolo-modal-signin">
+	<div class="apollo-base-modal-header">
+		<div ng-if="isLoading" class="sign-in-preloader"><img src="admin/img/preloader.gif" alt="preloader" /></div>
+		<p class="apollo-base-modal-title">Sign in</p>
+	</div>
+	<div class="apollo-line"></div>
+	<div class="apollo-base-modal-body">
+		<a class="apollo-base-button apollo-linkedin-button" ng-click="signInLinkedIn($event)" href="#">Sign in with LinkedIn</a>
+		<a class="apollo-base-button apollo-facebook-button" ng-click="signInFacebook($event)" href="#">Sign in with Facebook</a>
+		<!-- <a class="apollo-base-button apollo-google-button" href="#">Sign in with Google</a> -->
+		<div id="g-signin2" data-onsuccess="onSignIn"></div>
+		<p class="apollo-error" ng-if="error">{{ error }}</p>
+	</div>	
+</div>

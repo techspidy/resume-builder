@@ -1,0 +1,247 @@
+.default-section {
+	padding: 15px; border-radius: 2px;
+}
+.base_resume_card {
+	background: #FFF;
+    width: 210px;
+    height: 230px; border-radius: 2px;
+    padding: 10px; color: #555;
+    margin-right: 20px; margin-bottom: 20px;
+}
+.card_content {
+	text-align: center;
+}
+.new_card_content {
+	margin-top: 50px;
+}
+.new_card_content p {
+	font-weight: 300; font-size: 20px; margin-top: 12px;
+}
+
+.resume_card_nav {
+	text-align: center;
+}
+.resume_card_nav a {
+	display: inline-block;
+    width: 40px !important;
+    height: 40px !important;	
+    background-color: #CCCCCC !important;
+    margin: 5px 5px;
+}
+.resume_card_nav a i {
+	line-height: 40px !important;
+}
+.resume_card p {
+	font-weight: 300; font-size: 16px; margin-top: 12px;
+}
+
+/* resume edit section */
+.resume-edit-section {	
+	position: relative;
+}
+.resume-edit-section-left {
+	width: 100%;
+	padding-right: 320px;
+}
+.resume-edit-section-right {
+	width: 300px;
+	position: absolute; top: 15px; right: 0px;
+}
+.resume-edit-panel-content, .apollo-panel-content {
+	background: #FFFFFF;
+	padding: 15px;
+}
+.side-panel {
+	margin-bottom: 20px;
+}
+.side-panel-content {
+	margin-top: 15px;
+}
+.panel-title {
+	margin: 0px;
+    margin-bottom: 7px;
+    color: #5f5f5f;
+    font-weight: 400;
+    font-size: 18px;	
+}
+.panel-content {
+	margin-top: 15px;
+	color: #6d6d6d;
+}
+
+/* choose new section modal */
+.section-choose {
+	float: left;
+	width: 119px; height: 104px; background: #F2F2F2;
+	margin: 10px;
+    font-size: 53px;
+    color: #414040;	
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.section-choose i {
+	display: inline-block;
+}
+.section-choose span {
+	display: block;
+    margin-top: -7px;
+    font-size: 14px;
+}
+.section-choose-selected {
+	background: #414040;
+	color: #FFFFFF;
+}
+
+/* sections */
+.base-sortable {
+	display: block;
+	margin-bottom: 7px;
+}
+.base-sortable-header {
+	padding: 8px 10px;
+	border-style: solid; border-width: 1px; border-color: #2f4050;
+	background: #2f4050;
+	cursor: move;
+	color: #d6d6d6;
+}
+/*.base-sortable-header {
+    padding: 8px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a2a2a2;
+    background: #eaeaea;
+    cursor: move;
+    color: #6b6b6b;
+}*/
+.about-sortable-header {
+	cursor: default;
+}
+.section-move-handle, .section-name-display {
+	cursor: move;
+}
+.section-name-display-about {
+	cursor: default;
+}
+.base-sortable-content {
+	overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-top-style: none;	
+    border-color: #585858;
+}
+.base-sortable-content-inside {
+	padding: 10px;
+	background: #fbfbfb;
+}
+.section-small-description {
+	max-width: 50%;
+	height: 50px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 14px;
+}
+.section-open-close {
+	position: relative;
+}
+.section-open, .section-close {
+	position: absolute; left: 0; top: 0;
+    display: block;
+    left: -29px;
+    top: -9px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.section-open span, .section-close span {
+	position: absolute;
+    left: 12px; top: 9px;
+}
+.section-font {
+	font-size: 14px !important;
+	outline: none;
+}
+.remove-section {
+	cursor: pointer;
+	right: 20px;
+    width: 40px;	
+}
+textarea:focus {
+	outline: none !important;
+}
+
+/* handle content collapse */
+.section-content-close {
+	display: none;	
+}
+.section-content-no-border {
+	border-style: none !important;
+}
+
+.extended-section-directive {
+	position: relative; display: block;
+}
+.new-subsection {
+	position: absolute;
+	right: 0px; top: -45px;
+}
+
+/* sectio interests */
+.inline_add_value {
+    width: 120px !important;
+    float: left;
+    margin-top: -12px !important;
+    margin-right: 10px !important;	
+}
+.subsection-item-margin {
+	margin-top: 20px;
+}
+
+/* section about */
+.section-about {
+	margin-bottom: 20px;
+	display: block;
+}
+.about-sortable-content {
+	padding-top: 15px;
+}
+.contact-item {
+
+}
+.contact-icon {
+    font-size: 24px;
+    padding: 4px 0px;
+    display: block;
+    padding-right: 15px;
+    padding-top: 7px;
+    width: 40px;	
+}
+.apollo-contacts-modal-body {
+	overflow-y: scroll;
+	max-height: 280px;
+}
+.add-contact-ui {
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 12px;	
+}
+.contact-sortable-header {
+	min-width: 150px;
+}
+.sortable-contacts {
+	margin: 0px;
+}
+.contact-item-name-display {
+    overflow: hidden;
+    max-width: 150px;	
+}
+/*.resumes-section {
+	background: #FFF;
+	padding: 15px; border-radius: 2px;
+}*/
+
+
+
+input:focus {
+  border-bottom: 1px solid #0ac29d !important;
+}

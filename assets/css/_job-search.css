@@ -1,0 +1,99 @@
+.job-searchbar-ui {
+	position: absolute;
+	left: 0; top: 20px; width: 100%;
+	padding: 15px; z-index: 200;	
+}
+.job-searchbar-ui-inside {
+	background: #f5f5f5;
+	display: block; width: 100%;
+	padding: 20px;
+    padding-top: 50px;
+}
+.job-display-section {
+	margin-top: 76px;
+}
+.job-searchbox {
+	position: relative;
+	width: 700px;
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+}
+.job-searchbox-loader {
+	position: absolute; left: -30px; top: 31px;
+}
+.job-searchbox-loader img {
+	width: 20px; height: 20px;
+}
+.job-search-input {
+	margin-top: 15px !important;
+}
+.job-listing {
+	cursor: pointer;
+}
+.job-listing-inner {	
+	padding: 10px;
+	position: relative;
+	border-bottom-style: solid; border-width: 1px;
+	border-color: #ccc;
+	padding: 15px 0px;
+}
+.job-listing-inner-background {
+	width: 100%; height: 100%;
+	position: absolute; left: 0; top: 0;
+	z-index: 10;
+	background: #f1f5f7;
+	opacity: 0;
+}
+.job-listing-inner-content {
+	z-index: 11;
+	position: relative;
+}
+.job-listing-title {
+	color: #738290;
+	margin: 0px;
+}
+.job-listing-company {
+    font-size: 12px;
+    color: #0ac29d;
+    margin: 0px;
+    margin-top: 7px;
+}
+.job-listing-location, .job-listing-timeago {
+	margin: 0; color: #738290;
+	font-size: 12px;
+}
+.job-listing-location > span, .job-listing-timeago > span {
+	margin-right: 5px;
+}
+
+.job-listing-timeago {
+	margin-top: 7px;
+	color: #0ac29d;
+}
+
+.job-listing-external-link {
+	position: absolute; 
+    top: 14px;
+    right: 17px;
+}
+.job-listing-marker {
+	position: absolute; 
+	left: -5px; top: 0px;
+	width: 5px; height: 100%;
+	background: #0ac29d;
+	z-index: 15;
+	opacity: 0;
+}
+.job-listing-loadmore {
+	padding: 20px 0px;
+	padding-top: 40px;
+	text-align: center;
+}
+.job-listing-loadmore a {
+	display: inline-block;
+	float: none;
+	display: inline-block !important;
+	padding-left: 20px !important; padding-right: 20px !important;
+}
+

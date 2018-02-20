@@ -1,0 +1,27 @@
+{
+  "name": "apollo-cv",
+  "description": "",
+  "main": "",
+  "authors": [
+    "apollo apps"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "angular-route-segment": "^1.5.1",
+    "ngAnimate": "*",
+    "angular-local-storage": "^0.5.2",
+    "angular-route": "^1.6.1",
+    "angular-tooltips": "^1.1.10",
+    "angular-ui-sortable": "^0.16.1",
+    "textAngular": "^1.5.16",
+    "bootstrap-css-only": "^3.3.7",
+    "angular-toastr": "^2.1.1",
+    "angularjs-datepicker": "^2.1.14",
+    "pickadate": "^3.5.6",
+    "ng-pickadate": "^0.3.1",
+    "angular-upload": "^1.0.12"
+  }
+}

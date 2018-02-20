@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="apollo" ng-controller="SignInCtrl">
+    <head>
+        <title>Apollo Resume | Sign in</title>
+        <meta name="description" content="Apollo Resume Admin, sign in to create stunning resumes" />
+        
+        <meta name="keywords" content="resume admin, resume builder admin, create a web resume" />
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="images/favicon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-responsive.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/magnific-popup.css"> 
+        <link rel="stylesheet" href="admin/components/ngAnimate/css/ng-animation.css">
+        <link rel="stylesheet" href="admin/css/main.css">
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="admin/components/angular-modal-service/dst/angular-modal-service.js"></script>
+        <script src="admin/components/ngAnimate/js/angular-animate.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
+        <script src="admin/components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+        <link rel="stylesheet" href="admin/components/angular-toastr/dist/angular-toastr.min.css"> 
+
+        <!--<script src="components/angular-route-segment/build/angular-route-segment.js"></script>-->
+        <script src="admin/components/angular-route/angular-route.min.js"></script>
+        <script src="admin/components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+        
+        <script src="admin/components/angular-tooltips/dist/angular-tooltips.js"></script>
+        <link rel="stylesheet" href="admin/components/angular-tooltips/dist/angular-tooltips.css"> 
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+        <script type="text/javascript" src="admin/components/angular-ui-sortable/sortable.min.js"></script>
+
+        <script src='admin/components/textAngular/dist/textAngular-rangy.min.js'></script>
+        <script src='admin/components/textAngular/dist/textAngular-sanitize.min.js'></script>
+        <script src='admin/components/textAngular/dist/textAngular.min.js'></script>
+
+        <script src='admin/components/ng-pickadate/ng-pickadate.js'></script>
+
+        <link rel='stylesheet' href='admin/components/angular-upload/src/directives/btnUpload.min.css'>
+        <script src='admin/components/angular-upload/angular-upload.min.js'></script>        
+
+        <script type="text/javascript" src="admin/js/app.js"></script>
+
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        
+        <meta name="google-signin-client_id" content="323804443048-qgq6sefalfdhuu3uiohkbi66nn1aq5cc.apps.googleusercontent.com">
+
+        <script type="text/javascript">
+
+            function renderButton() {
+                setTimeout(function() {
+                    gapi.signin2.render('g-signin2', {
+                    'scope': 'profile email',
+                    'width': 240,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onGoogleSuccess
+                    });
+                }, 100);
+            }            
+        </script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton"></script>
+        
+
+        <script type="text/javascript" src="//platform.linkedin.com/in.js">
+            api_key: 811y0ntd8jvpz9
+            authorize: true
+            onLoad: onLinkedInLoad
+        </script>
+        <script type="text/javascript">
+            
+            // Setup an event listener to make an API call once auth is complete
+            function onLinkedInLoad() {
+                window.linkedinJS_SDKLoaded = true;
+            }
+
+        </script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="214554584182-un3htpoaquatr62rsv3h3aekkom60ijd.apps.googleusercontent.com">
+        
+    </head>
+    <body class="appear-animate">
+    <%- include('parts/google-analytics'); %>
+    
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1641933539433743', //YOUR_FACEBOOK_CREDIDENTIALS
+      xfbml      : true,
+      status     : true,
+      cookie     : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+        
+        <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+        
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+            
+            
+            <!-- Fullwidth Slider -->
+            <div class="home-section fullwidth-slider bg-dark" id="home">
+                
+                
+                <!-- Slide Item -->
+                <section class="home-section bg-scroll bg-dark-alfa-30" data-background="images/apollo/hero3.jpg">
+                    <div class="js-height-full container">
+                        
+
+                        
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+            
+            </div>
+            <!-- End Fullwidth Slider -->
+            
+            
+            <!-- Navigation panel -->
+            <nav class="main-nav dark transparent stick-fixed">
+                <div class="full-wrapper relative clearfix">
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <div class="nav-logo-wrap local-scroll">
+                        <a href="/#home" class="logo">
+                            <img src="images/logo-white.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="mobile-nav">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">
+                        <%- include('navigation-signin'); %>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navigation panel -->
+        
+        
+        </div>
+        <!-- End Page Wrap -->
+        
+        
+        <!-- JS -->        
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>        
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below 
+        **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+        <script type="text/javascript" src="js/gmap3.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/contact-form.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>        
+        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+        
+    </body>
+</html>

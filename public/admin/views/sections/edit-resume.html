@@ -1,0 +1,60 @@
+<div class="default-section resume-edit-section">
+	<div class="row">
+		<div class="resume-edit-section-left">
+			<div class="resume-edit-panel-content">
+				<p class="panel-title">Sections</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+					
+
+					<section-about class="section-about" about="resumeMeta.aboutSection"></section-about>
+
+					<a ng-click="newSection($event)" style="display: inline-block;" class="apollo-base-button apollo-green-button" href="#">Create new section</a>
+
+					<!--apollo sections-->
+					<div class="apollo-sections">						
+						<ul ui-sortable="sortableOptions" ng-model="sections">
+							<li class="base-sortable" section="section" base-section ng-repeat="section in sections"></li>
+						</ul>						
+					</div>
+					<!--/apollo sections-->
+
+				</div>
+			</div>
+		</div>
+		<div class="resume-edit-section-right">
+			<div class="resume-edit-panel-content side-panel">
+				<p class="panel-title">Save/Preview</p>
+				<div class="apollo-line"></div>
+				<div class="side-panel-content">
+					<a ng-click="saveSection($event)" style="display: inline-block; width: 49%;" class="apollo-base-button apollo-green-button" href="#">Save</a>				
+					<a style="display: inline-block; width: 49%;" class="apollo-base-button apollo-success-button" target="_blank" href="../{{user.permalinkSlug}}/{{resumeData.permalinkSlug}}">Preview</a>
+				</div>
+			</div>
+
+			<!--change theme-->
+			<div class="resume-edit-panel-content side-panel">
+				<p class="panel-title">Theme Settings</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+					<a ng-click="chooseTemplate($event)" style="display: block;" class="apollo-base-button apollo-success-button" href="#">Change template</a>
+					<div class="template-panel-img">
+						<img ng-src="../templates/{{ templateData.slug }}/img/preview.jpg" alt="">
+					</div>					
+				</div>
+			</div>
+			<!--/change theme-->
+
+			<!--export widget-->
+			<div class="resume-edit-panel-content side-panel">
+				<p class="panel-title">Export Settings</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+					<a ng-click="exportDocument($event)" style="display: block;" class="apollo-base-button apollo-success-button" href="#">Export as PDF</a>
+					<p class="simple-info-note">Note! <span>Not all templates render well as PDF.</span></p>
+				</div>
+			</div>
+			<!--/export widget-->
+		</div>
+	</div>
+</div>

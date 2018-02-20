@@ -1,0 +1,57 @@
+<div class="base-sortable-body">
+	<!--sortable header-->
+	<div class="base-sortable-header about-sortable-header">
+		
+		<div style="margin-right: 10px;" class="pull-left"><i tooltips tooltip-template="About section is mandatory" class="fa fa-info-circle" aria-hidden="true"></i></div>
+		<div class="section-name-display section-name-display-about pull-left">{{ about.name }}</div>
+		<div class="section-open-close pull-right">			
+			<div ng-if="about.opened == true" class="section-open" ng-click="closeSection($event)"><span><i class="fa fa-chevron-up" aria-hidden="true"></i></span></div>
+			<div ng-if="about.opened == false" class="section-open" ng-click="openSection($event)"><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--/sortable header-->
+
+	<!--sortable content-->
+	<div class="base-sortable-content" ng-class="{'section-content-no-border': about.opened != true}">
+		<div class="base-sortable-content-inside" ng-class="{'section-content-close': about.opened != true}">
+			<div class="row">
+	      		<div class="col s4">
+	      			<input type="text" name="" ng-model="about.firstName" placeholder="First name">
+	      		</div>
+	      		<div class="col s4">
+	      			<input type="text" name="" ng-model="about.lastName" placeholder="Last name">
+	      		</div>
+	      		<div class="col s4">
+	      			<input type="text" name="" ng-model="about.currentPosition" placeholder="Current position">
+	      		</div>	      		
+	      	</div>
+
+	        <div class="row">
+	              <div class="col s8">
+	                    <textarea style="min-height: 136px;" class="subsection-txa" placeholder="About/describe yourself" ng-model="about.aboutYourself"></textarea>
+	              </div>
+	              <div class="col s4">
+	                    <upload-ui image="about.image"></upload-ui>
+	              </div>
+	        </div>
+
+	        <div class="row">
+	        	<div class="col s3">
+	        		<a ng-click="addContact($event)" class="apollo-base-button apollo-success-button apollo-small-button" href="#"><i style="margin-right: 10px;" class="fa fa-plus" aria-hidden="true"></i>Add contact</a>	        		
+	        	</div>
+	        	<div class="col s9">
+
+					<ul class="sortable-contacts" ui-sortable="sortableOptions" ng-model="about.contacts">		
+						<li style="display: inline-block; margin-right: 10px; margin-bottom: 10px;" class="base-sortable" ng-repeat="contact in about.contacts">
+							<subsection-contacts></subsection-contacts>			
+						</li>
+					</ul>
+
+	        	</div>
+	        </div>		
+		</div> 
+
+	</div>
+	<!--/sortable content-->
+</div>

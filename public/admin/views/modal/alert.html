@@ -1,0 +1,20 @@
+<div class="apollo-base-modal-background" style="z-index: 999999999;">
+	<div class="apollo-base-modal">
+		<div class="apollo-base-modal-header">
+			<p class="apollo-base-modal-title">{{ alertTitle }}</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body">
+			<p>{{ alertMessage }}</p>
+			<p class="apollo-error" ng-if="error">{{ error }}</p>
+		</div>
+		<div ng-if="isConfirm" style="text-align: center;">
+			<a style="width: 40%; display: inline-block; margin-right: 3px;" ng-click="cancel($event)" class="apollo-base-button apollo-cancel-button" href="#">Cancel</a>
+			<a style="width: 40%; display: inline-block; margin-left: 3px;" ng-click="ok($event)" class="apollo-base-button apollo-success-button" href="#">OK</a>			
+		</div>
+		<div style="text-align: center;" ng-if="!isConfirm">			
+			<a ng-click="ok($event)" style="width: 40%; display: inline-block;" class="apollo-base-button apollo-green-button" href="#">OK</a>			
+		</div>		
+	</div>
+</div>

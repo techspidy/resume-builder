@@ -1,0 +1,136 @@
+<div class="default-section">
+	<div class="row">
+		<div>
+			<!--user options panel-->
+			<div class="resume-edit-panel-content">
+				<p class="panel-title">General account information</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+					<!--main info-->
+					<div class="my-ac-panel-section">
+						<div class="row">
+							<div class="col s12">
+								
+								<span class="user_thumb my-ac-thumb pull-left"><img ng-src="{{ user.userPhoto }}" /></span>
+								<div class="my-ac-user-main-data pull-left">
+									<span style="">{{ user.firstName }} {{ user.lastName }}</span>
+									<span class="my-ac-email">{{user.email}}</span>
+								</div>
+								<div class="clearfix"></div>
+
+							</div>
+						</div>
+					</div>
+					<!--/main info-->
+
+					<!--phone, location-->
+					<div class="my-ac-panel-section">
+						<div class="row">
+							<div class="col s4">
+								<p class="pull-left my-ac-label">Phone number:</p> 
+								<input class="pull-left" type="text" name="" ng-model="user.options.phone">
+								<div class="clearfix"></div>								
+							</div>
+							<div class="col s4">
+								<p class="pull-left my-ac-label">Country:</p> 
+								<input class="pull-left" type="text" name="" ng-model="user.options.country">
+								<div class="clearfix"></div>								
+							</div>
+							<div class="col s4">
+								<p class="pull-left my-ac-label">City:</p> 
+								<input class="pull-left" type="text" name="" ng-model="user.options.city">
+								<div class="clearfix"></div>								
+							</div>
+						</div>					
+					</div>
+					<!--/phone, location-->
+
+					<!--user options-->
+					<div class="my-ac-panel-section">
+						<div class="row">
+							<div class="col s4">
+				      			<p class="input-top-label">Send me occasionally emails regarding updates</p>
+				      			<div class="checkbox-entry">
+					  				<input type="checkbox" id="receive-newsletter" checked="checked" ng-model="user.options.newsletter" />
+					      			<label for="receive-newsletter">Newsletter</label>
+				      			</div>															
+							</div>
+							<div class="col s4">
+				      			<p class="input-top-label">Allow recruiters to search for your CV</p>
+				      			<div class="checkbox-entry">
+					  				<input type="checkbox" id="receive-agencies" checked="checked" ng-model="user.options.agenciesAllow" />
+					      			<label for="receive-agencies">Recruiters can contact me</label>
+				      			</div>
+							</div>
+							<div class="col s4">
+								<a ng-click="saveOptions($event)" style="display: inline-block; max-width: 200px;" class="apollo-base-button apollo-green-button" href="#">Save changes</a>
+							</div>
+						</div>					
+					</div>
+					<!--/user options-->
+				</div>
+			</div>
+			<!--/user options panel-->
+
+			<!--user permalink panel-->
+			<div class="resume-edit-panel-content my-ac-panel">
+				<p class="panel-title">Permalink</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+
+					<!--user permalink and default cv-->
+					<div class="my-ac-panel-section">
+						<div class="row">
+							<div class="col s12">
+								<p class="my-ac-label">User pretty permalink:</p> 
+								<p class="input-top-label" style="margin-top: -10px; margin-bottom: 15px;">The pretty path to your resumes Ex: "/your-name/resume-name"</p>
+
+								<input style="margin-right: 20px; width: 163px;" class="pull-left" type="text" placeholder="user slug" name="" ng-model="permalink">
+								<a style="margin-top: 13px; margin-right: 20px;" ng-click="savePermalink($event)" class="apollo-base-button apollo-success-button apollo-small-button pull-left" href="#"><i style="margin-right: 10px;" class="fa fa-floppy-o" aria-hidden="true"></i>Save permalink</a>
+
+								<p style="margin-right: 0px;" class="current-user-permalink-display pull-left">{{ appHost }}/<span>{{ permalink }}</span></p>
+								
+
+
+								<div class="clearfix"></div>
+								
+								
+							</div>						
+						</div>					
+					</div>
+					<!--/user permalink and default cv-->
+										
+				</div>
+			</div>
+			<!--/user permalink panel-->
+
+			<!--remove user panel-->
+			<div class="resume-edit-panel-content my-ac-panel">
+				<p class="panel-title">Delete account</p>
+				<div class="apollo-line"></div>
+				<div class="panel-content">
+
+					
+					<div class="my-ac-panel-section">
+						<div class="row">
+							<div class="col s3">
+								<a ng-click="removeAccount($event)" style="display: inline-block; max-width: 200px; margin-top: 18px;" class="apollo-base-button apollo-red-button" href="#">Delete account</a>								
+							</div>
+							<div class="col s4">
+								<p class="my-ac-label">Delete your account and all data</p> 
+								<p class="input-top-label" style="margin-top: -10px;">Will remove your account and all your data (resumes, user settings, media and all information related to you).</p>
+								
+							</div>						
+						</div>					
+					</div>
+					
+										
+				</div>
+			</div>
+			<!--/remove user panel-->
+
+		</div>
+
+
+	</div>
+</div>

@@ -1,0 +1,49 @@
+.usr-list-item {
+	position: relative;
+}
+.usr-list-item-line {
+	position: absolute; left: 0px; top: 0px;
+	height: 100%; width: 3px; background: #0ac29d;
+}
+.usr-list-item-line-active {
+	background: #f0b63a;
+}
+/* f0a93a */
+.usr-list-item-content {
+	padding: 10px;
+	padding-left: 13px;
+	background: #f1f5f7;
+	border-bottom-style: solid;
+    border-color: #ccc;
+    border-width: 1px;	
+}
+.user-info-icon {
+	margin-right: 10px;
+	color: #0ac29d;
+}
+.user-list-item-top {
+	padding: 5px; 0px;
+}
+.user-open-close {
+	color: #0ac29d;
+}
+.user-list-item-details {
+	padding: 20px;
+	padding-left: 23px;
+	background: #fbfbfb;
+	font-size: 14px;
+}
+.user-resume-link {
+	margin-right: 15px;
+}
+.user-resume-link span {
+	margin-right: 7px;
+}
+
+.usr-list-listing-inner {	
+	padding: 10px;
+	position: relative;
+	border-bottom-style: solid; border-width: 1px;
+	border-color: #ccc;
+	padding: 15px 0px;
+}

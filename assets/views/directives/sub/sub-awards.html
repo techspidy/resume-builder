@@ -1,0 +1,45 @@
+<!--header-->
+<div class="base-sortable-header">
+	<div style="margin-right: 10px;" class="section-move-handle pull-left"><i class="fa fa-arrows" aria-hidden="true"></i></div>
+	<div class="section-name-display pull-left">{{ subsection.name }}</div>
+	<div class="section-open-close pull-right">			
+		<div ng-if="subsection.opened == true" class="section-open" ng-click="closeSubSection($event, subsection)"><span><i class="fa fa-chevron-up" aria-hidden="true"></i></span></div>
+		<div ng-if="subsection.opened == false" class="section-open" ng-click="openSubSection($event, subsection)"><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
+	</div>
+	<div class="remove-section pull-right" style="display: block;" ng-click="removeSubSection($event, subsection)">
+		<i class="fa fa-trash-o" aria-hidden="true"></i>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--/header-->
+
+<!--sortable content-->
+<div class="base-sortable-content" ng-class="{'section-content-no-border': subsection.opened != true}">
+	<div class="base-sortable-content-inside" ng-class="{'section-content-close': subsection.opened != true}">	
+		<div class="row">
+      		<div class="col s6">
+      			<input type="text" name="" ng-model="subsection.name" placeholder="Award title">
+      		</div>
+      		<div class="col s6">
+      			<input type="text" name="" ng-model="subsection.issuer" placeholder="Issuer">
+      		</div>
+      	</div>
+		<div class="row">
+      		<div class="col s4">
+      		    <p class="input-top-label">Award date</p>
+      		    <input placeholder="From" type="text" ng-model="subsection.award_date" pick-a-date="subsection.award_date | date" />
+      		</div>
+
+      		<div class="col s8">
+                        <p class="input-top-label">URL to award</p>
+                        <input placeholder="URL to award" type="text" ng-model="subsection.award_url" />
+      		</div>      		
+      	</div> 
+            <div class="row">
+                  <div class="col s12">
+                        <textarea class="subsection-txa" placeholder="About/description" ng-model="subsection.about"></textarea>
+                  </div>                  
+            </div>     	
+	</div>
+</div>
+<!--/sortable content-->			

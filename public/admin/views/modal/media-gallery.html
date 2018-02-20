@@ -1,0 +1,29 @@
+<div class="apollo-base-modal-background">
+	<div class="apollo-base-modal apollo-media-gallery-modal">
+		<div class="apollo-base-modal-header">
+			<div ng-if="showLoading" class="sign-in-preloader media-gallery-preloader"><img src="img/preloader.gif" alt="preloader" /></div>
+			<p class="apollo-base-modal-title">Media gallery</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body apollo-gallery-modal-body">
+			<p class="media-gallery-no-image-info" ng-if="images.length == 0">You haven't uploaded a photo yet.<br />
+			Use the upload button below.</p>
+			<image-ui ng-repeat="image in images" on-remove="removeImage(image._id)" on-select="selectImage(image._id)" image="image"></image-ui>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="apollo-line" style="margin-bottom: 14px;"></div>
+		<div style="text-align: center; margin-bottom: 14px;">
+				<div
+				class="btn btn-primary btn-upload" param="image_file" 
+				accept="image/jpeg,image/png"
+				upload-button
+				url="/api/Files"
+				on-success="onUploadSuccess(response)" 
+				on-error="onError(response)"
+				on-upload="onUploadStart(files)"
+				>Upload new image</div>
+		</div>		
+	</div>
+</div>

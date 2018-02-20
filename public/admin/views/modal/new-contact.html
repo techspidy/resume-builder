@@ -1,0 +1,39 @@
+<div class="apollo-base-modal-background">
+	<div class="apollo-base-modal apollo-new-section-modal">
+		<div class="apollo-base-modal-header">
+			<p class="apollo-base-modal-title">Add contact</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body apollo-contacts-modal-body">
+			<div class="row">
+				<div class="col col6">
+					<div ng-repeat="contact in contactsLeft" class="contact-item">
+						<div class="contact-icon pull-left"><i class="{{contact.icon}}" aria-hidden="true"></i></div>
+						<div class="pull-left">
+							<input type="text" ng-model="contact.value" name="" placeholder="{{contact.placeholder}}">
+						</div>
+						<div class="add-contact-ui pull-left">
+							<a ng-click="addItem(contact)" href="#">+ Add</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col col6">
+					<div ng-repeat="contactRight in contactsRight" class="contact-item">
+						<div class="contact-icon pull-left"><i class="{{contactRight.icon}}" aria-hidden="true"></i></div>
+						<div class="pull-left">
+							<input type="text" ng-model="contactRight.value" name="" placeholder="{{contactRight.placeholder}}">
+						</div>
+						<div class="add-contact-ui pull-left">
+							<a ng-click="addItem(contactRight)" href="#">+ Add</a>
+						</div>						
+						<div class="clearfix"></div>
+					</div>
+				</div>				
+			</div>			
+		</div>
+
+		<div class="apollo-line" style="margin-bottom: 35px;"></div>	
+	</div>
+</div>

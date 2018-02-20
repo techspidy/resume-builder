@@ -1,0 +1,8 @@
+<div class="upload-ui">
+	<div class="img-container">		
+		<div class="no-image"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+		<img ng-if="image._Xthumb" class="img-container-img" ng-src="../cdn/{{image._Xthumb}}" alt="" />
+		<a ng-if="image._Xthumb" class="image-media-delete" ng-click="removeImage()" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+	</div>
+	<a ng-click="uploadImage($event)" class="apollo-base-button apollo-success-button apollo-small-button" href="#"><i style="margin-right: 10px;" class="fa fa-cloud-upload" aria-hidden="true"></i>Upload image</a>
+</div>

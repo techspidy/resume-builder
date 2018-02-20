@@ -1,0 +1,23 @@
+<div class="job-listing-inner">
+	<div class="job-listing-inner-background"></div>
+	<div class="job-listing-inner-content">				
+		<div class="pull-left" style="width: 50%;">
+			<p style="margin-left: 5px;" class="job-listing-title">{{ job.jobtitle }}</p>
+			<p style="margin-left: 5px;" class="job-listing-company">{{ job.company }}</p>							
+		</div>
+		<div class="pull-left" style="width: 50%;">
+			<p class="job-listing-location">
+				<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+				<span>{{ job.formattedLocation }}</span>
+			</p>
+			<p class="job-listing-timeago">
+				<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+				<span>{{ job.formattedRelativeTime }}</span>
+			</p>																
+		</div>
+		<div class="job-listing-external-link"><i class="fa fa-external-link" aria-hidden="true"></i></div>
+		<div class="clearfix"></div>
+
+	</div>	
+	<div class="job-listing-marker"></div>
+</div>

@@ -1,0 +1,10 @@
+<div class="new-subsection">
+	<a ng-click="newSubsection($event)" class="apollo-base-button apollo-success-button apollo-small-button" href="#"><i style="margin-right: 10px;" class="fa fa-plus" aria-hidden="true"></i>Add skill</a>
+</div>
+<div class="apollo-sections">
+	<ul ui-sortable="sortableOptions" ng-model="subsections">		
+		<li class="base-sortable" ng-repeat="subsection in subsections">
+			<subsection-skillset></subsection-skillset>
+		</li>
+	</ul>						
+</div>

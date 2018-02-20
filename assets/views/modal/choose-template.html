@@ -1,0 +1,18 @@
+<div class="apollo-base-modal-background">
+	<div class="apollo-base-modal apollo-choose-template-modal">
+		<div class="apollo-base-modal-header">
+			<p class="apollo-base-modal-title">Choose template</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body apollo-templates-modal-body">
+				<template-preview ng-repeat="template in templates track by $index" class="template-preview pull-left"></template-preview>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="apollo-line" style="margin-bottom: 1px;"></div>
+		<div style="text-align: center; padding: 12px; font-style: italic; color: #acacac;">
+			Select template
+		</div>		
+	</div>
+</div>

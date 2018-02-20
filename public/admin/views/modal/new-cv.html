@@ -1,0 +1,14 @@
+<div class="apollo-base-modal-background">
+	<div class="apollo-base-modal">
+		<div class="apollo-base-modal-header">
+			<p class="apollo-base-modal-title">New resume</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body">
+			<input type="text" placeholder="Resume name" ng-model="cvName" name="">
+			<a ng-click="createNew($event)" class="apollo-base-button apollo-green-button" href="#">OK</a>
+			<p class="apollo-error" ng-if="error">{{ error }}</p>
+		</div>	
+	</div>
+</div>

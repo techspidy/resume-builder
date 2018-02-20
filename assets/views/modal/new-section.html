@@ -1,0 +1,21 @@
+<div class="apollo-base-modal-background">
+	<div class="apollo-base-modal apollo-new-section-modal">
+		<div class="apollo-base-modal-header">
+			<p class="apollo-base-modal-title">Choose section type</p>
+			<a href="#" ng-click="closeModal($event)" class="apollo-modal-close"><span><i class="material-icons">close</i></span></a>
+		</div>
+		<div class="apollo-line"></div>
+		<div class="apollo-base-modal-body">
+			<div class="section-choose" ng-click="selectItem(section.slug)" ng-repeat="section in sections" ng-class="{'section-choose-selected': section.selected}">
+				<i class="fa" ng-class="section.icon" aria-hidden="true"></i>
+				<span>{{ section.label }}</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="apollo-line" style="margin-bottom: 14px;"></div>
+		<div style="text-align: center;" ng-if="!isConfirm">			
+			<a ng-click="ok($event)" style="width: 40%; display: inline-block;" class="apollo-base-button apollo-green-button" href="#">OK</a>			
+		</div>		
+	</div>
+</div>

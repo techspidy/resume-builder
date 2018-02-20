@@ -1,0 +1,26 @@
+<div class="default-section resumes-section">
+
+	<!--create new card-->
+	<div class="base_resume_card pull-left">
+		<div class="card_content new_card_content">			
+			<a href="#" ng-click="createNew($event)" style="display: inline-block;" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+			<p>Create new</p>
+		</div>
+	</div>
+	<!--/create new card-->
+
+
+	<div ng-repeat="resume in resumes" class="base_resume_card resume_card pull-left">
+		<div class="card_content new_card_content">	
+		<div class="resume_card_nav">
+			<a tooltips tooltip-template="Delete" href="#" ng-click="removeCV(resume._id)" style="display: inline-block;" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
+			<a tooltips tooltip-template="Edit" href="/admin/resumes/{{ resume._id }}" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">mode_edit</i></a>
+			<a tooltips tooltip-template="Clone" href="#" ng-click="cloneCV(resume._id, resume.meta.name)" style="display: inline-block;" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">content_copy</i></a>
+		</div>		
+			<p>{{ resume.meta.name }}</p>
+		</div>
+	</div>	
+
+
+	<div class="clearfix"></div>
+</div>

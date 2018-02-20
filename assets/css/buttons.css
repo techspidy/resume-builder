@@ -1,0 +1,191 @@
+.apollo-base-button:link {
+    padding: 9px 20px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 16px;
+	color: #44484b; 
+	background: #FFF;
+	text-decoration: none; outline: none;
+	display: block;
+	border-radius: 2px;
+}
+.apollo-base-button:visited {
+	color: #44484b;
+}
+.apollo-base-button:hover {
+	color: #44484b;
+}
+.apollo-base-button:active {
+	color: #44484b;
+}
+
+/* linkedin button */
+.apollo-linkedin-button:link {
+	background: #00a0dc;
+	color: #FFFFFF !important;
+	margin-bottom: 13px;
+}
+.apollo-linkedin-button:visited {
+	background: #00a0dc;
+	color: #FFFFFF;
+}
+.apollo-linkedin-button:hover {
+	background: #0395cb;
+	color: #FFFFFF;
+}
+.apollo-linkedin-button:active {
+	background: #00a0dc;
+	color: #FFFFFF;
+}
+
+/* facebook button */
+.apollo-facebook-button:link {
+	background: #3B5998;
+	color: #FFFFFF;
+	margin-bottom: 13px;
+}
+.apollo-facebook-button:visited {
+	background: #3B5998;
+	color: #FFFFFF;
+}
+.apollo-facebook-button:hover {
+	background: #4564a6;
+	color: #FFFFFF;
+}
+.apollo-facebook-button:active {
+	background: #3B5998;
+	color: #FFFFFF;
+}
+
+/* google button */
+.apollo-google-button:link {
+	background: #db4437;
+	color: #FFFFFF;
+	margin-bottom: 13px;
+}
+.apollo-google-button:visited {
+	background: #db4437;
+	color: #FFFFFF;
+}
+.apollo-google-button:hover {
+	background: #e54f42;
+	color: #FFFFFF;
+}
+.apollo-google-button:active {
+	background: #db4437;
+	color: #FFFFFF;
+}
+
+/* green butotn */
+.apollo-success-button:link {
+	background: #e9edf0;
+	color: #656565 !important;
+	margin-bottom: 13px;
+}
+.apollo-success-button:visited {
+	background: #e9edf0;
+	color: #656565;
+}
+.apollo-success-button:hover {
+	background: #e2e7eb;
+	color: #656565;
+}
+.apollo-success-button:active {
+	background: #e9edf0;
+	color: #656565;
+}
+
+/* green butotn */
+.apollo-green-button:link {
+	background: #0ac29d;
+	color: #FFFFFF !important;
+	margin-bottom: 13px;
+}
+.apollo-green-button:visited {
+	background: #0ac29d;
+	color: #FFFFFF;
+}
+.apollo-green-button:hover {
+	background: #08af8d;
+	color: #FFFFFF;
+}
+.apollo-green-button:active {
+	background: #0ac29d;
+	color: #FFFFFF;
+}
+
+/* red butotn */
+.apollo-red-button:link {
+	background: #f44336;
+	color: #FFFFFF !important;
+	margin-bottom: 13px;
+}
+.apollo-red-button:visited {
+	background: #f44336;
+	color: #FFFFFF;
+}
+.apollo-red-button:hover {
+	background: #ed3629;
+	color: #FFFFFF;
+}
+.apollo-red-button:active {
+	background: #f44336;
+	color: #FFFFFF;
+}
+
+/* cancel butotn */
+.apollo-cancel-button:link {
+	background: #4f4f4f;
+	color: #FFFFFF !important;
+	margin-bottom: 13px;
+}
+.apollo-cancel-button:visited {
+	background: #4f4f4f;
+	color: #FFFFFF;
+}
+.apollo-cancel-button:hover {
+	background: #404141;
+	color: #FFFFFF;
+}
+.apollo-cancel-button:active {
+	background: #4f4f4f;
+	color: #FFFFFF;
+}
+
+/* small button */
+.apollo-small-button {
+	font-size: 13px !important;
+    padding: 7px 10px !important;
+}
+
+/* google sign in button */
+#g-signin2 {
+	width: 100%;
+}
+#g-signin2 > div {
+	width: 100% !important;
+	height: 43px !important;
+	background: #db4437;
+}
+#g-signin2 > div .abcRioButtonContentWrapper {
+	position: relative;
+}
+#g-signin2 > div .abcRioButtonContentWrapper .abcRioButtonIcon {
+	position: absolute;
+	left: 0px; top: 0px;
+}
+#g-signin2 > div .abcRioButtonContentWrapper >span {
+	margin-top: -4px;
+	display: block !important;
+}
+#g-signin2 > div .abcRioButtonContentWrapper .abcRioButtonIcon {
+	display: none;
+}
+#g-signin2 span {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF !important;
+}
+
+

@@ -1,0 +1,13 @@
+<div class="new-subsection">
+	<input placeholder="Ex: reading" class="inline_add_value" ng-model="hobby" type="text" name="">
+	<a ng-click="newSubsection($event)" class="apollo-base-button apollo-success-button apollo-small-button pull-left" href="#"><i style="margin-right: 10px;" class="fa fa-plus" aria-hidden="true"></i>Add hobby</a>
+	<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+<div class="apollo-sections">
+	<ul ui-sortable="sortableOptions" ng-model="subsections">		
+		<li style="display: inline-block; margin-right: 10px; margin-bottom: 10px;" class="base-sortable" ng-repeat="subsection in subsections">
+			<subsection-interests></subsection-interests>			
+		</li>
+	</ul>						
+</div>
